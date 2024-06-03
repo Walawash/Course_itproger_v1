@@ -186,3 +186,18 @@ header nav ul li.btn a:hover {
     width: 100%;
     padding: 50px 0;
 }
+
+.trending .games span {
+    display: block;
+    text-align:center;
+    margin-top: 20px;
+}
+
+.container-big-text {
+    font-weight: bold;
+    font-size: 35px ;
+    text-align: center;
+    padding: 50px 0;
+    width: 800px;
+
+}
