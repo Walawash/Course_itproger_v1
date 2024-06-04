@@ -193,11 +193,73 @@ header nav ul li.btn a:hover {
     margin-top: 20px;
 }
 
-.container-big-text {
+.big-text {
     font-weight: bold;
     font-size: 35px ;
     text-align: center;
     padding: 50px 0;
     width: 800px;
 
+}
+
+
+/*******************BANNER******************/
+.banner {
+    padding: 30px;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner img{
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+
+
+/*************СЕКЦИЯ С КАРТИНКОЙ НА ЗАДНЕМ ФОНЕ*************/
+
+.features {
+    background:url('/img/backgroundimage.png') no-repeat center center fixed;
+    background-size: cover;
+    padding:80px;
+}
+
+.features h3, 
+.features p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.features h3 {
+    font-size:30px;
+
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
 }
