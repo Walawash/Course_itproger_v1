@@ -232,7 +232,7 @@ header nav ul li.btn a:hover, .email .block button:hover {
 /*************СЕКЦИЯ С КАРТИНКОЙ НА ЗАДНЕМ ФОНЕ*************/
 
 .features {
-    background:url('/img/backgroundimage.png') no-repeat center center fixed;
+    background:url('./../img/backgroundimage.png') no-repeat center center fixed;
     background-size: cover;
     padding:80px;
 }
@@ -363,7 +363,13 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 /**************************** FOOTER ****************************/
  footer{
-    background: #0000;
+
+/*  Цвета можно задавать несколькими способами 
+    Либо ты пишешь #000, либо #000000 (шесть символов)
+    также цвет можно задавать через rgba(255, 255, 255, 1) - посмотри в интернете подробнее
+    Твоя ошибка в том, что ты написал 0000 - четыре нуля, вместо трех или шести.
+*/
+    background: #000;
     padding: 50px 0;
  }
 
