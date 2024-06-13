@@ -22,6 +22,7 @@ img {
 .wrapper {
     background: linear-gradient(90deg, rgb(54, 30, 10) 0%, rgb(0, 0, 0) 100%);
     width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -379,11 +380,61 @@ header nav ul li.btn a:hover, .email .block button:hover {
     margin-top: 20px;
 }
  .hero--about img {
+    width: 600px;
     position: absolute;
-    right: -50px;
+    right: -150px;
     top: 0;
+    padding-top: 30px;
+    padding-right: 250px;
+ }
+
+ .work {
+    padding: 80px 0;
 
  }
+ .work .h2 {
+    font-size: 25px;
+    margin-bottom:40px;
+ }
+ .work .blocks {
+    display: flex;
+    justify-content: space-between;
+ }
+ .work .blocks .block {
+    width: 25%;
+    border-radius:10px;
+    padding: 50px 35px;
+    background: #1C140F;
+ }
+
+ .work .blocks .block h3 {
+    font-size: 20px;
+    margin:20px 0;
+ }
+
+ .work .blocks .block .badge {
+    border-radius: 1px;
+    padding: 10px 20px;
+ }
+
+ .work .blocks .block .badge .purple{
+    background:#2C1225;
+ }
+
+ .work .blocks .block .badge .brown {
+    background:#DC4200; 
+ }
+
+
+ .work .blocks .block .badge .green {
+    background: #00DC8D;
+ }
+
+
+
+
+
+
 
 /**************************** FOOTER ****************************/
  footer{
