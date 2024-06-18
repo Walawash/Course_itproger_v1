@@ -25,28 +25,36 @@
         <div class="container hero--contacts">
             <h1>Lorem Ipsum is simply dummy text of thr printing and.</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <img src="/img/MAPA.png" alt="карта">
+            <img src="./img/MAPA.png" alt="карта" class="map-image">
         </div>
         <div class="feedback">
             <div class="container">
                 <h2>Say Hello</h2>
                 <p>Lorem Ipsum is simply dummy text for printing</p>
-                <form> 
-                    <div class="inline">
-                        <div>
-                            <label>First Name</label>
-                            <input type="text">  
-                        </div>
-                        <div>
-                            <label>Last Name</label>
-                            <input type="text">
-                        </div>
-                        <label>Email Adress</label>
-                        <input type="email" class="one-line">
 
-                        <label>Message</label>
-                        <textarea class="one-line"></textarea>
+                <form action="" class="feedback-form">
+                    <div class="feedback-form__row">
+                        <div class="form-input__wrap">
+                            <span class="form__label">First Name</span>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form-input__wrap">
+                            <span class="form__label">Last Name</span>
+                            <input type="text" class="form__input">
+                        </div>
                     </div>
+
+                    <div class="feedback-form__row">
+                        <div class="form-input__wrap">
+                            <span class="form__label">Email Adress</span>
+                            <input type="email" class="form__input">
+                        </div>
+                    </div>
+
+                    <div class="feedback-form__row">
+                        <textarea class="feedback-textarea"></textarea>
+                    </div>
+
                     <button type="button">Get in touch</button>
                 </form>
             </div>

@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/*************** Общий стили ***************/
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -32,17 +36,27 @@ img {
     margin: 0 auto;
 }
 
-header.logo,
+header .logo,
 footer .blocks .logo {
     text-transform:uppercase ;
     font-size: 29px;
     font-weight: 800;
-    margin: 50px
 }
 
 
 
-/***************HEADER***************/
+/*************** HEADER ***************/
+
+header {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.container {
+    margin-top: 10px;
+}
 
 
 header nav {
@@ -80,9 +94,6 @@ header nav ul li.active::after {
     margin: 0 auto;
 }
 
-
-
-
 header nav ul li:not(.active):not(.btn) a :hover {
     border-bottom: 5px solid #dc7000;
 
@@ -100,8 +111,7 @@ header nav ul li.btn a:hover, .email .block button:hover {
 }
 
 
-/*************** HERO--INFO***************/
-
+/*************** HERO--INFO ***************/
 
 .hero {
     padding-bottom: 100px;
@@ -118,7 +128,6 @@ header nav ul li.btn a:hover, .email .block button:hover {
     color: #dc7000;
     font-size: 20px;
     font-weight: bold;
-    
 }
 
 .hero--info .text2 {
@@ -127,21 +136,21 @@ header nav ul li.btn a:hover, .email .block button:hover {
     font-weight: bold;
 }
 
-.hero--info  .Quote1 {
+.hero--info .Quote1 {
     font-size: medium;
     font-weight: 16px;
     line-height: 170%;
     margin: 30px 0;
-
 }
 
 .hero--info  .button , .hero--about .button {
     background: #FA8305;
-    color:fff;
+    color: #fff;
     border-radius: 50px;
     padding: 15px 30px;
     border: 0;
-    transition: all 500ms ease 
+    transition: all 500ms ease;
+    cursor: pointer;
 }
 
 .hero--info .button:hover .hero--about .button:hover {
@@ -194,7 +203,12 @@ header nav ul li.btn a:hover, .email .block button:hover {
 .trending .games span {
     display: block;
     text-align:center;
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .big-text {
@@ -203,7 +217,6 @@ header nav ul li.btn a:hover, .email .block button:hover {
     text-align: center;
     padding: 50px 0;
     width: 800px;
-
 }
 
 
@@ -226,8 +239,7 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .banner img{
     width: 100%;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }
 
 
@@ -309,7 +321,6 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .email {
     padding-bottom: 120px;
-
 }
 
 .email h3 {
@@ -361,13 +372,15 @@ header nav ul li.btn a:hover, .email .block button:hover {
     position: relative;
     z-index: 2;
     color: #fff;
-
+    right: 5px;
 }
 
 /****************************СТРАНИЦА ПРО НАС****************************/
+
 .hero--about {
     position: relative;
 }
+
 .hero--about .info {
     width: 500px;
     padding: 250px 0;
@@ -381,58 +394,66 @@ header nav ul li.btn a:hover, .email .block button:hover {
 .hero--about .info .button {
     margin-top: 20px;
 }
- .hero--about img {
+
+.hero--about img {
     width: 600px;
     position: absolute;
     right: -150px;
     top: 0;
     padding-top: 30px;
     padding-right: 250px;
- }
+}
 
- .work {
+.work {
     padding: 80px 0;
+}
 
- }
- .work .h2 {
+.work .h2 {
     font-size: 25px;
     margin-bottom:40px;
- }
- .work .blocks {
+}
+
+.work .blocks {
     display: flex;
     justify-content: space-between;
- }
- .work .blocks .block {
+}
+
+.work .blocks .block {
     width: 25%;
     border-radius:10px;
     padding: 50px 35px;
     background: #1C140F;
- }
+}
 
- .work .blocks .block h3 {
+.work .blocks .block h3 {
     font-size: 20px;
     margin:20px 0;
- }
+}
 
- .work .blocks .block .badge {
+.work .blocks .block .badge {
     border-radius: 1px;
     padding: 10px 20px;
- }
+}
 
- .work .blocks .block .badge .purple{
+.work .blocks .block .badge .purple {
     background:#2C1225;
- }
+}
 
- .work .blocks .block .badge .brown {
+.work .blocks .block .badge .brown {
     background:#DC4200; 
- }
+}
 
-
- .work .blocks .block .badge .green {
+.work .blocks .block .badge .green {
     background: #00DC8D;
- }
+}
 
 /**************************** СТРАНИЦА КОНТАКТОВ ****************************/
+
+.map-image {
+    margin: 30px auto;
+    display: block;
+}
+
 .hero--contacts h1 {
     text-align: center;
     margin-top: 70px;
@@ -458,56 +479,54 @@ header nav ul li.btn a:hover, .email .block button:hover {
     text-align: center;
     margin-top: 10px;
 }
+
 .feedback p {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
 }
 
-.feedback form {
-    margin:80px auto;
-    width: 600px;
+
+.feedback-form {
+    width: 960px;
+    margin: 50px auto;
 }
 
-.feedback form .inline {
+.feedback-form__row {
     display: flex;
-    justify-content: space-between;
+    align-content: stretch;
+    width: 100%;
+    gap: 10px;
 }
 
-.feedback form .inline > div {
-    width: 50%;
+.form-input__wrap {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.feedback form label {
-    color: #4f4f4f;
-    font-size: 14px;
-}
-
-.feedback form input,
-.feedback form textarea {
+.feedback-form input,
+.feedback-form textarea {
     background:#2c2420;
     border-radius: 10px;
     border: 0.6px solid #CECECE;
     display: block;
-    width: 90%;
     padding:15px 10px;
     outline:none;
     color: #fff;
     margin-top:7px ;
     margin-bottom: 20px;
-
+    width: 100%;
 }
 
-.feedback form .one-line {
-    width: 96%;
-}
-
-.feedback form textarea {
+.feedback-form textarea {
     resize: none;
     height: 200px;
 }
 
-.feedback form button {
+.feedback-form button {
     background: #dc7000;
     border-radius: 5px;
     border: 0;
@@ -518,34 +537,29 @@ header nav ul li.btn a:hover, .email .block button:hover {
     transition: all 500ms ease;
 }
 
-.feedback form button:hover {
+.feedback-form button:hover {
     background:red;
 }
 
-/**************************** FOOTER ****************************/
- footer{
-    
 
-/*  Цвета можно задавать несколькими способами 
-    Либо ты пишешь #000, либо #000000 (шесть символов)
-    также цвет можно задавать через rgba(255, 255, 255, 1) - посмотри в интернете подробнее
-    Твоя ошибка в том, что ты написал 0000 - четыре нуля, вместо трех или шести.
-*/
+/**************************** FOOTER ****************************/
+
+footer {
     background: #000;
     padding: 50px 0;
- }
+}
 
- footer .blocks {
+footer .blocks {
     justify-content: space-between;
     display: flex;
 }
 
-footer .blocks p{
+footer .blocks p {
     width: 300px;
     margin: 15px 0;
 }
 
-footer .blocks h4{
+footer .blocks h4 {
     font-weight: 500;
     font-size: 15px;
 }
@@ -562,10 +576,8 @@ footer hr {
     border:0;
     height:0.6px;
     background:#ccc;
-
 }
 
 footer > p {
-    text-align:center ;
+    text-align: center;
 }
-
